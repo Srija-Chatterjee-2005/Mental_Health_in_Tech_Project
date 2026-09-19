@@ -38,7 +38,7 @@ div[data-baseweb="select"]>div,[data-testid="stFileUploaderDropzone"]{{backgroun
 
 @st.cache_data(show_spinner=False)
 def get_default_data():
-    return clean_data(load_data(Path(__file__).parent / "data" / "survey.csv"))
+    return clean_data(load_data(Path(__file__).parent / "survey.csv"))
 
 def reset_filters():
     for key in ("country_filter", "gender_filter", "company_filter", "age_filter"):
